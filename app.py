@@ -25,9 +25,7 @@ def load_css():
 
 load_css()
 
-logo = Image.open("assets/logo.png")
-
-st.sidebar.image(logo, width=180)
+st.sidebar.title("🏪 Retail Analytics")
 
 st.markdown("""
 # 🏪 Retail Sales Forecasting Dashboard
