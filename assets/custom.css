@@ -1,15 +1,36 @@
-/* Main background */
+/* Main App 
 .stApp {
     background-color: #f7f9fc;
+    color: #222222;
+}*/
+
+/* Main Content */
+.main {
+    color: #222222;
 }
 
-/* KPI cards */
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+    color: #1f2937 !important;
+}
+
+/* Paragraphs */
+p {
+    color: #333333 !important;
+}
+
+/* Markdown Lists */
+li {
+    color: #333333 !important;
+}
+
+/* KPI Cards */
 div[data-testid="metric-container"] {
     background: white;
     border-radius: 12px;
     padding: 15px;
-    border: 1px solid #e6e6e6;
-    box-shadow: 0px 2px 8px rgba(0,0,0,0.08);
+    border: 1px solid #dddddd;
+    box-shadow: 0 2px 10px rgba(0,0,0,.08);
 }
 
 /* Sidebar */
@@ -18,11 +39,16 @@ section[data-testid="stSidebar"] {
 }
 
 section[data-testid="stSidebar"] * {
-    color: white;
+    color: white !important;
 }
 
 /* Buttons */
 .stButton>button {
     border-radius: 8px;
     font-weight: bold;
+}
+
+/* DataFrames */
+[data-testid="stDataFrame"] {
+    background-color: white;
 }

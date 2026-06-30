@@ -1,6 +1,4 @@
 import streamlit as st
-from PIL import Image
-
 
 st.set_page_config(
     page_title="Retail Analytics Dashboard",
@@ -10,41 +8,14 @@ st.set_page_config(
 
 st.title("📊 Retail Analytics & AI-Powered Sales Forecasting")
 
-st.markdown("""
-Welcome to the Retail Analytics Dashboard.
+st.write("Welcome to the Retail Analytics Dashboard")
 
-Use the menu on the left to navigate through the different pages.
-""")
+st.subheader("Modules")
 
-def load_css():
-    with open("assets/custom.css") as f:
-        st.markdown(
-            f"<style>{f.read()}</style>",
-            unsafe_allow_html=True
-        )
-
-load_css()
-
-st.sidebar.title("🏪 Retail Analytics")
-
-st.markdown("""
-# 🏪 Retail Sales Forecasting Dashboard
-
-### AI-Powered Retail Analytics
-
-This dashboard provides:
-
-- 📈 Sales Analytics
-- 📦 Product Analytics
-- 🏪 Store Analytics
-- 👥 Customer Analytics
-- 🤖 AI Revenue Prediction
-- 📅 Sales Forecasting
-- 💡 Business Insights
-""")
-
-st.markdown("---")
-
-st.caption(
-    "Retail Sales Forecasting Dashboard | Built with Streamlit, Plotly & XGBoost"
-)
+st.write("📈 Sales Analytics")
+st.write("📦 Product Analytics")
+st.write("🏪 Store Analytics")
+st.write("👥 Customer Analytics")
+st.write("🤖 Revenue Prediction")
+st.write("📅 Forecasting")
+st.write("💡 Business Insights")
